@@ -1,0 +1,206 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#portfolio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: red;
+    z-index: 999;
+}
+
+#software {
+    color: #aaa;
+    animation: fadeIn 1.5s ease-in;
+    text-align: center;
+}
+
+#header {
+    text-align: right;
+    color: #aaa;
+}
+
+#name {
+    text-align: center;
+    color: red;
+}
+
+ul {
+    color: white;
+    padding-left: 20px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+#projects {
+    text-align: center;
+    color: red;
+}
+
+#project {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin: 0;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: darkred;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.intro-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.intro-image img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+hr.faded-line {
+    border: 0;
+    border-top: 1px solid #aaa;
+    margin: 20px 0;
+}
+
+.contact-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+    background-color: darkred;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+
+/* === MEDIA QUERIES === */
+
+@media (max-width: 600px) {
+    #portfolio {
+        font-size: 24px;
+        position: static;
+        text-align: center;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .intro-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .contact-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact-container h2 {
+        font-size: 20px;
+    }
+}
